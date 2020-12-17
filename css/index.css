@@ -1,0 +1,466 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+
+:root
+{
+    --color-text: #fff;
+    --color-bg: #171717;
+    --color-link: yellow;
+    /* --dynamicWidth: objectWidth - vw + vh + 150; */
+
+}
+*{
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+main{
+    cursor: none;
+    width: 100% !important;
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+body {
+
+    background-color: var(--color-bg);
+}
+.page {
+    position: absolute;
+    width: 100% !important;
+    height: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.page__inner {
+    /* display: flex; */
+    justify-content: center;
+    width: 100%;
+}
+
+/* cursor styles */
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+.cursor--small {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 11000;
+    background: var(--color-text);
+}
+.cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+}
+
+/* Navigation Bar Items */
+
+.nav {
+    align-items: center;
+    position: static;
+    width: 100%;
+    display: inline;
+    display: flex;
+
+    }
+.nav li
+{
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+
+.nav .right
+{
+    width: 100%;
+    text-align: right;
+    margin-right: 0.5%;
+    overflow-x: hidden;
+}
+li a{
+    text-decoration: none;
+}
+.nav h1 {
+    color: wheat;
+    padding-right: 5vh;
+}
+
+.nav h1:hover{
+    color: white;
+    cursor: none;
+    text-decoration: underline;
+    text-decoration-style: transition( all 0.3s ease-in-out 0s);
+}
+.ml12 {
+    font-weight: 1700;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding-top: 10px;
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+/* landing page content  */
+.top{
+    height: 100vh;
+    text-align: center;
+    background-color: #171717;
+    border-style: solid;
+}
+.landingCont{
+    width: 100vw !important;
+}
+.pic{
+    width: 60vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro{
+   
+    display: inline-flex;
+    text-align: center;
+}
+#tags{
+    color:rgba(96, 87, 70,0.9);
+}
+/* landing const */
+.landingCont{
+    padding-top: 10vh;
+    align-items: left;
+    overflow: hidden;
+}
+.box{
+    /* display: inline-flex; */
+    color: wheat;
+    
+    
+}
+
+.row{
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+    align-items: left;
+    text-align: left;
+    
+}
+
+.row h1{
+    width: 100vw;
+    height: 10vh;
+}
+#txt1{
+    /* padding-top: 10vh; */
+    padding-left: 60vw;
+    font-size: 50px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.10em solid wheat !important; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation: typing 7.5s steps(10, end), blink-caret .7s step-end; */
+   
+}
+#txt2{
+    padding-top: -15vh;
+    font-size: 53px;
+    transform: translateX(10vw);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.10em solid wheat !important; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation: typing 5.5s steps(20, end), blink-caret .3s step-end; */
+}
+#txt3{
+    transform: translateX(60vw);
+    padding-top: 10px;
+    font-size: 40px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.10em solid wheat !important; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation: 
+    typing 1.5s steps(20, end),
+    blink-caret 1.75s step-end infinite; */
+}
+#txt4{
+    padding-top: 10px;
+    font-size: 40px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.10em solid wheat !important; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation: 
+    typing 7.5s steps(20, end),
+    blink-caret .75s step-end infinite; */
+}
+#txt5{
+    transform: translateX(90vw);
+    padding-top: -5px;
+    font-size: 60px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.10em solid wheat !important; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite; */
+}
+#txt6{
+    transform: translateX(70vw);
+    padding-top: 5px;
+    font-size: 45px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.10em solid wheat !important; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation: 
+    typing 3.5s steps(30, end), */
+    /* blink-caret .75s step-end infinite; */
+}
+#txt7{
+    transform: translateX(10vw);
+    padding-top: 10px;
+    font-size: 40px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.10em solid wheat !important; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite; */
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+/* Footer */
+.bottom{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: #171717;
+    border-style: solid;
+
+    display: flex;
+}
+.connect{
+    width: 100vw;
+    margin-top: 0;
+    align-content: center;
+}
+.about{
+    height: 100vh;
+    align-items: center;
+    width: 44vw;
+}
+#self{
+    padding-top: 25vh;
+    padding-bottom: 8vh;
+    transform: scale(1.1);
+}
+.form{
+    width: 56vw;
+    align-items: right;
+    text-align: right;
+    padding-top: 4vh;
+    
+}
+.comment{
+    width: 30vw;
+    height: 10vh;
+    background-color: rgba(96, 87, 70,0.4);
+    color: wheat;
+    border: none;
+}
+#aboutMe{
+    width: 56vw;
+    color: wheat;
+    font-size: 1.3rem;
+    padding-top: 5vh;
+    justify-content: justify;
+    text-align: right;
+
+}
+#email{
+    width: 56vw;
+    /* float: left; */
+    font-weight: 200;
+    font-size: 30px;
+    color: wheat;
+    padding-left: 200px;
+    text-align: right;
+}
+.icons-holder{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 20vw;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-top: 3vh;
+    
+    
+}
+.icons-holder img{
+    display: block;
+    margin: 10px auto;
+    height: 35px;
+    position: relative;
+    filter: brightness(0) invert(1);
+}
+.copyright{
+    position: relative;
+    bottom: 0;
+    height: 3vh;
+    text-align: center;
+    padding-top: 5vh;
+    color: wheat;
+
+}
+
+.line1{
+    border: 2px solid wheat;
+}
+.line2{
+    border: 2px solid wheat;
+    width: 56vw;
+}
+
+
+/* Moving Letters */
+.ml11 {
+    font-weight: 900;
+    font-size: 7em;
+    padding-top: 20%;
+    color: wheat;
+}
+
+.ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    /* padding-top: 0.1em; */
+    padding-right: 0.5em;
+    padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+}
+  
+.ml11 .line1 { 
+    top: 0; 
+    left: 0;
+}
+  
+ .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+    
+}
+
+#scrollNav{
+    width: 100vw;
+    background-color: wheat;
+    display: block;
+}
+#works, #prompt{
+    color: black;
+    text-align: center;
+    padding-top:3vh;
+
+}
+#prompt{
+    text-align: right;
+    padding-right: 10vw;
+    padding-bottom:1vh;
+}
+
+/* .horizontalSection{
+
+    width: auto;
+    position: relative;
+    height: 100vh;
+    padding: 0 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+   
+}
+.outerCont{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.scrollCont{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+.innerCont{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    will-change: transform;
+    transform: translateX(400px);
+}
+.scrollCont #box1{
+    position: relative;
+    height: 100vh;
+    width: 20%;
+    background-color: #111f30;
+    flex-shrink: 0;
+    border-style: solid;
+    border-color: red;
+    margin: 30px;
+} */
+/* .glider #box1, .glider #box2,  .glider #box3, .glider #box4{
+    position: relative;
+    height: 20vh;
+    width: 40%;
+    background-color: #111f30;
+    flex-shrink: 0;
+    border-style: solid;
+    border-color: red;
+    margin: 30px;
+} */

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/glider.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Load the Paper.js library -->
+    <!-- <script type="text/javascript" src="js/paper.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+      <div class="page">
+        <div class="page__inner">
+          <!-- The cursor elements -->
+          <div class="cursor cursor--small"></div>
+          <canvas class="cursor cursor--canvas" resize></canvas>
+
+          <div class="top">
+            <nav class="nav">
+              <div class="left">
+                <li>
+                  <img
+                    src="logo.png"
+                    alt="#"
+                    width="200vw"
+                    height="75vh"
+                    margin-left="0"
+                  />
+                </li>
+              </div>
+              <div class="right">
+                <li>
+                  <a><h1 id="txt">Works</h1></a>
+                  
+                </li>
+                <li>
+                  <a href="#bottom"><h1 id="txt">Connect</h1></a>
+                </li>
+              </div>
+            </nav>
+
+            <div class="landingCont">
+              <div class="box">
+                <div class="row" id="tags"><div id="txt1">Computer Science</div></div>
+                <div class="row" id="tags"><div id="txt2">Interactive Media</div></div>
+                <div class="row" id="tags"><div id="txt3">Javascript</div></div>
+                <div class="row" id="tags"><div id="txt4">Python</div></div>
+
+                <div class="row" id="intro">
+                  <h1 class="ml12">Ayesha Zafar Sheikh</h1>
+                </div>
+                <div class="row" id="tags"><div id="txt5">CSS</div></div>
+                <div class="row" id="tags"><div id="txt6">MySQL</div></div>
+                <div class="row" id="tags"><div id="txt7">C++</div></div>
+              </div>
+            </div>
+
+          </div>
+          <div id="scrollNav">
+            <h1 id="works">A few of the fun and exciting stuff I have worked on</h1id>
+            <h1 id="prompt">Scroll right or drag to explore!</h1>
+          </div>
+
+          <div class="glider-contain multiple">
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <div class="glider">
+
+              <div class="glider-slide "><img src="01.png" alt="rfnelkfnlkfnw"></div>
+              <div class="glider-slide "><img src="02.png" alt=""></div>
+              <div class="glider-slide "><img src="03.png" alt=""></div>
+              <div class="glider-slide "><img src="04.png" alt=""></div>
+
+              <!-- <button aria-label="Next" class="glider-next">»</button> -->
+              <!-- <div id="dot" class="glider-dot"></div> -->
+            </div>
+          </div>
+          <div class="bottom" id="bottom">
+            <div class="connect">
+              <h1 class="ml11">
+                <span class="text-wrapper">
+                  <span class="line line1"></span>
+                  <span class="letters">Lets Connect</span>
+                </span>
+              </h1>
+              <h1 id="email">az1866@nyu.edu</h1>
+              
+              <br><br><br>
+              <hr class="line2"/>
+              <h1 id="aboutMe">Hi! <br> My name is Ayesha and I am a sophomore at NYUAD. As you can tell, I love to code, build websites from scratch and design. Off Screen, I love to travel, drink karak and read. I am sure there is something we can connect over! Feel free to shoot me a message.
+              </h1>
+              <div class="form">
+                <form action="/form/submit" method="POST">
+                  <textarea class="comment">Type your comment here.</textarea>
+                  <br>
+                  <input type="submit" name="submit" value="Send" style="background-color: wheat; color: black; width: 5vw; height: 3vh; border-radius: 20%; cursor: pointer;">
+                </form>
+
+              </div>
+              
+            </div>
+
+            <div class="about">
+              <img
+                src="az1866.jpg"
+                id="self"
+                alt="#"
+              />
+              <hr class="line1"/>
+              <div class="icons-holder">
+                <a href="https://www.linkedin.com" target="_blank"
+                  ><img src="linkedin.png" alt="" />
+                </a>
+                <a
+                  href="https://www.facebook.com/ayesha.zafar.96343"
+                  target="_blank"
+                  ><img src="facebook.png" alt="" />
+                </a>
+                <a href="https://github.com/AyeshaZfr" target="_blank"
+                  ><img src="github.png" alt="" />
+                </a>
+                <a href="https://www.instagram.com/ayesha2842/" target="_blank"
+                  ><img src="instagram.png" alt="" />
+                </a>
+                
+              </div>
+              <div class="copyright">
+                Copyright © 2020 AyeshaZfr. All Rights Reserved
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <script type="text/javascript" src="js/paper.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+    <!-- react JS -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Moving letters -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script src="js/glider.min.js"></script>
+    <script>
+      new Glider(document.querySelector(".glider"), {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: ".dots",
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next",
+        },
+      });
+    </script>
+  </body>
+</html>
