@@ -259,7 +259,12 @@ li a{
     from, to { border-color: transparent }
     50% { border-color: orange; }
 }
-
+#scroll{
+    text-align: right;
+    color: wheat;
+    font-family: 'Roboto Slab', serif;
+    
+}
 /* Footer */
 .bottom{
     height: 100vh;
@@ -358,7 +363,7 @@ li a{
 .ml11 {
     font-weight: 900;
     font-size: 7em;
-    padding-top: 20%;
+    padding-top: 15%;
     color: wheat;
 }
 
