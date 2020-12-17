@@ -265,6 +265,14 @@ li a{
     font-family: 'Roboto Slab', serif;
     
 }
+.userinfo{
+    height: 10vh;
+    width: 100vw;
+    background-color: wheat;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
 /* Footer */
 .bottom{
     height: 100vh;
