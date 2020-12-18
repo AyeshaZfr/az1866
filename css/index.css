@@ -1,4 +1,4 @@
-
+/* import google font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 
@@ -10,10 +10,12 @@
     /* --dynamicWidth: objectWidth - vw + vh + 150; */
 
 }
+
 *{
     margin: 0 !important;
     padding: 0;
     box-sizing: border-box;
+    border: none;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -27,6 +29,8 @@ body {
 
     background-color: var(--color-bg);
 }
+
+/* set page layout for cursor */
 .page {
     position: absolute;
     width: 100% !important;
@@ -101,6 +105,8 @@ li a{
     text-decoration: underline;
     text-decoration-style: transition( all 0.3s ease-in-out 0s);
 }
+
+/* styling for AYESHA ZAFAR SHEIKH element */
 .ml12 {
     font-weight: 1700;
     font-size: 4em;
@@ -113,6 +119,8 @@ li a{
     display: inline-block;
     line-height: 1em;
   }
+
+
 /* landing page content  */
 .top{
     height: 100vh;
@@ -120,26 +128,23 @@ li a{
     background-color: #171717;
     border-style: solid;
 }
-.landingCont{
-    width: 100vw !important;
-}
+
 .pic{
     width: 60vw;
     height: 90vh;
     justify-content: center;
     align-items: center;
 }
-
 #intro{
-   
     display: inline-flex;
     text-align: center;
 }
 #tags{
     color:rgba(96, 87, 70,0.9);
 }
-/* landing const */
+
 .landingCont{
+    width: 100vw !important;
     padding-top: 10vh;
     align-items: left;
     overflow: hidden;
@@ -160,6 +165,7 @@ li a{
     width: 100vw;
     height: 10vh;
 }
+
 #txt1{
     /* padding-top: 10vh; */
     padding-left: 60vw;
@@ -170,7 +176,6 @@ li a{
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     /* animation: typing 7.5s steps(10, end), blink-caret .7s step-end; */
-   
 }
 #txt2{
     padding-top: -15vh;
@@ -247,14 +252,17 @@ li a{
     typing 3.5s steps(30, end),
     blink-caret .75s step-end infinite; */
 }
-@keyframes typing {
+/* @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
-}
+} */
+
+
+/* works section */
 #scroll{
     text-align: right;
     color: wheat;
@@ -269,6 +277,7 @@ li a{
     text-align: center;
     font-size: 30px;
 }
+
 /* Footer */
 .bottom{
     height: 100vh;
