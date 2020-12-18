@@ -190,7 +190,7 @@ li a{
 }
 #txt3{
     transform: translateX(60vw);
-    padding-top: 10px;
+    padding-top: 10vh;
     font-size: 40px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: 0.10em solid wheat !important; The typwriter cursor */
@@ -202,7 +202,7 @@ li a{
     blink-caret 1.75s step-end infinite; */
 }
 #txt4{
-    padding-top: 10px;
+    /* padding-top: 10px; */
     font-size: 40px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: 0.10em solid wheat !important; The typwriter cursor */
@@ -215,7 +215,7 @@ li a{
 }
 #txt5{
     transform: translateX(90vw);
-    padding-top: -5px;
+    padding-top: -5vh;
     font-size: 60px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: 0.10em solid wheat !important; The typwriter cursor */
@@ -228,7 +228,7 @@ li a{
 }
 #txt6{
     transform: translateX(70vw);
-    padding-top: 5px;
+    padding-top: 2vh;
     font-size: 45px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: 0.10em solid wheat !important; The typwriter cursor */
@@ -241,7 +241,7 @@ li a{
 }
 #txt7{
     transform: translateX(10vw);
-    padding-top: 10px;
+    padding-top: 1vh;
     font-size: 40px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: 0.10em solid wheat !important; The typwriter cursor */
@@ -260,9 +260,6 @@ li a{
     from, to { border-color: transparent }
     50% { border-color: orange; }
 } */
-
-
-/* works section */
 #scroll{
     text-align: right;
     color: wheat;
@@ -277,7 +274,6 @@ li a{
     text-align: center;
     font-size: 30px;
 }
-
 /* Footer */
 .bottom{
     height: 100vh;
