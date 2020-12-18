@@ -145,10 +145,7 @@ li a{
     overflow: hidden;
 }
 .box{
-    /* display: inline-flex; */
     color: wheat;
-    
-    
 }
 
 .row{
@@ -156,8 +153,7 @@ li a{
     height: 10vh;
     overflow: hidden;
     align-items: left;
-    text-align: left;
-    
+    text-align: left; 
 }
 
 .row h1{
