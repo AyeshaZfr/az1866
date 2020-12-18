@@ -108,6 +108,7 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   background-color: wheat;
+  overflow: scroll;
 }
 
 
