@@ -93,6 +93,13 @@ body {
     margin-right: 0.5%;
     overflow-x: hidden;
 }
+@media screen and (max-width: 1010px) {
+    .nav .right{
+      display: hidden;
+    }
+    
+    
+}
 li a{
     text-decoration: none;
 }
@@ -360,7 +367,6 @@ li a{
     font-weight: 200;
     font-size: 30px;
     color: wheat;
-    padding-left: 200px;
     text-align: right;
 }
 @media screen and (max-width: 1010px) {
