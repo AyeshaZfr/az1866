@@ -170,7 +170,7 @@ li a{
 
 #txt1{
     font-size: 3.3em;
-    overflow: wrap; 
+    /* overflow: wrap;  */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens 
     letter-spacing: .15em; /* Adjust as needed */
@@ -178,7 +178,7 @@ li a{
 }
 #txt2{
     font-size: 53px;
-    overflow: wrap;
+    /* overflow: wrap; */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -186,7 +186,7 @@ li a{
 }
 #txt3{
     font-size: 40px;
-    overflow: hidden; 
+    /* overflow: hidden;  */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -194,9 +194,9 @@ li a{
 #txt4{
     /* padding-top: 10px; */
     font-size: 40px;
-    overflow: hidden; 
+    /* overflow: hidden;  */
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin: 0 auto;
     letter-spacing: .15em; /* Adjust as needed */
 
 }
@@ -218,23 +218,69 @@ li a{
     letter-spacing: .15em; /* Adjust as needed */
    
 }
-#txt7{
-    /* transform: translateX(10vw); */
-    /* padding-top: 1vh; */
-    font-size: 40px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: 0.10em solid wheat !important; The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+@media screen and (max-height: 666px) {
+    #txt1{
+        transform: scale(0.5);
+    }
+    #txt2{
+        transform: scale(0.5);
+    }
 
+    #txt3{
+        transform: scale(0.5);
+    }
+    #txt4{
+        transform: scale(0.5);
+    }
+    #txt5{
+        transform: scale(0.5);
+    }
+    #txt6{
+        transform: scale(0.5);
+    }
+    .ml12{
+        font-size: 2rem;
+    }
 }
+
 
 #scroll{
     text-align: right;
     color: wheat;
     font-family: 'Roboto Slab', serif;
     
+}
+@media screen and (max-height: 716px) {
+    #scroll{
+        transform: scale(0.9);
+    }
+    #txt1{
+        transform: scale(0.9);
+        font-size: 23px;
+    }
+    #txt2{
+        transform: scale(0.9);
+        font-size: 33px;
+    }
+
+    #txt3{
+        transform: scale(0.9);
+        font-size: 33px;
+        padding-left: 10%;
+    }
+    #txt4{
+        transform: scale(0.9);
+        font-size: 32px;
+    }
+    #txt5{
+        transform: scale(0.9);
+    }
+    #txt6{
+        transform: scale(0.9);
+    }
+    .ml12{
+        font-size: 4.5rem;
+    }
 }
 .userinfo{
     height: 10vh;
