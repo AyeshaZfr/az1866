@@ -7,8 +7,7 @@
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Load the Paper.js library -->
-    <!-- <script type="text/javascript" src="js/paper.js"></script> -->
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
@@ -16,6 +15,21 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
@@ -53,20 +67,20 @@
               </div>
             </nav>
 <!-- content for background -->
-            <div class="landingCont">
+            <div class="container-fluid landingCont">
               <div class="box">
-                <div class="row" id="tags"><div id="txt1">Computer Science</div></div>
-                <div class="row" id="tags"><div id="txt2">Interactive Media</div></div>
-                <div class="row" id="tags"><div id="txt3">Javascript</div></div>
-                <div class="row" id="intro">
+                <div class="container-fluid row" id="tags" style="padding-left: 55%; padding-top: 4%;"><div id="txt1">Computer Science</div></div>
+                <div class="container-fluid row" id="tags"><div id="txt2">Interactive Media</div></div>
+                <div class="container-fluid row" id="tags" style="padding-left: 75%; padding-top: 2%;"><div id="txt3">Javascript</div></div>
+                <div class="container-fluid row" id="intro" style="text-align: center;">
                   <h1 class="ml12">Ayesha Zafar Sheikh</h1>
                 </div>
                 <br>
-                <div class="row" id="tags"><div id="txt4">Python</div></div>   
-                <div class="row" id="tags"><div id="txt5">CSS</div></div>
-                <div class="row" id="tags"><div id="txt6">MySQL</div></div>
-                <div class="row" id="scroll"><a href="#scrollNav"><img src="scroll.png" alt=""></a></div>
-                <!-- <div class="row" id="tags"><div id="txt7">C++</div></div> -->
+                <div class="container-fluid row" id="tags"><div id="txt4" style="padding-left: 75%; padding-top: 5%;">Python</div></div>   
+                <div class="container-fluid row" id="tags" style="padding-left: 15%;"><div id="txt5">CSS</div></div>
+                <div class="container-fluid row" id="tags" style="padding-left: 55%;"><div id="txt6">MySQL</div></div>
+                <div class="container-fluid row" id="scroll" style="padding-right: 5%;"><a href="#scrollNav"><img src="scroll.png" alt=""></a></div>
+            
 
               </div>
             </div>
@@ -83,7 +97,7 @@
 
               <a href="https://github.com/AyeshaZfr/Audio-Project" target="_blank">
                 <div class="glider-slide">
-                  <div class="container">
+                  <div class="gcontainer">
                     <img src="01.png" alt="#" class="image" id="img1" style="width:100%">
                     <div class="middle">
                       <div class="text"><b> <div style="padding-bottom: 1vh; font-size: 1.5rem;">NYUAD's Audio-Visual Tour</div></b>Get going on a remarkable journey to explore the mesmerizing NYUAD campus. This tour provides a unique audio-visual perspective</div>
@@ -95,10 +109,10 @@
 
               <a href="https://ayeshazfr.github.io/QuixoticQuarantine/" target="_blank">
                 <div class="glider-slide">
-                  <div class="container">
+                  <div class="gcontainer">
                     <img src="03.png" alt="#" class="image" id="img2" style="width:100%">
                     <div class="middle">
-                      <div class="text"><b> <div style="padding-bottom: 1vh; font-size: 1.5rem;">QuixoticQuarantine</div></b>Ever wondered what everyday inanimate items would do in quarantine? Visit QuixoticQuarantine to see what they are up to!</div>
+                      <div class="text"><b> <div style="padding-bottom: 1vh; font-size: 2.5rem;">QuixoticQuarantine</div></b>Ever wondered what everyday inanimate items would do in quarantine? Visit QuixoticQuarantine to see what they are up to!</div>
                     </div>
                   </div>
                 </div>
@@ -107,10 +121,10 @@
 
               <a href="https://hasin-shabbir.github.io/movie/" target="_blank">            
                 <div class="glider-slide">
-                  <div class="container">
+                  <div class="gcontainer">
                     <img src="04.png" alt="#" class="image" id="img3" style="width:100%">
                     <div class="middle">
-                      <div class="text"><b> <div style="padding-bottom: 1vh; font-size: 1.5rem;">Trapped</div></b>Hey Alexa......... <br>Its never too late to disconnect with the technologies that dominate our lives today. In this short video project, we demonstrate how one should regain control of their life and escape the haunting presence of technology.</div>
+                      <div class="text"><b> <div style="padding-bottom: 1vh; font-size: 2.5rem;">Trapped</div></b>Hey Alexa......... <br>Its never too late to disconnect with the technologies that dominate our lives today. In this short video project, we demonstrate how one should regain control of their life and escape the haunting presence of technology.</div>
                     </div>
                   </div>
               </div>
@@ -118,7 +132,7 @@
 
               <a href="https://hasin-shabbir.github.io/comicStrip/" target="_blank"> 
                 <div class="glider-slide">
-                  <div class="container">
+                  <div class="gcontainer">
                     <img src="02.png" alt="#" class="image" id="img4" style="width:100%">
                     <div class="middle">
                       <div class="text"><b> <div style="padding-bottom: 1vh; font-size: 1.5rem;">CommicStrip</div></b>Decisions. Decisions. Decisions... <br>How would it feel to make decisions for someone and control their life? Check out my comicStrip for an exciting adventure!</div>
@@ -134,8 +148,8 @@
             </div>
           </div>
           <div class="userinfo">Click on any image to learn more!</div>
-          <div class="bottom" id="bottom">
-            <div class="connect">
+          <div class="container-fluid bottom row" id="bottom" style="padding-right: 7%;">
+            <div class=".col-sm-12 .col-md-9 .col-lg-9 connect">
               <h1 class="ml11">
                 <span class="text-wrapper">
                   <span class="line line1"></span>
@@ -146,20 +160,20 @@
               
               <br><br><br>
               <hr class="line2"/>
-              <h1 id="aboutMe">Hi! <br> My name is Ayesha and I am a sophomore at NYUAD. As you can tell, I love to code, build websites from scratch and design. Off Screen, I love to travel, drink karak and read. I am sure there is something we can connect over! Feel free to shoot me a message.
+              <h1 id="aboutMe">Hi! <br> My name is Ayesha and I am a sophomore at NYUAD. As you can tell, I love to code, build websites from scratch and design. Off Screen, I love to travel, drink karak and read. I am sure there is something we can connect over! Feel free to shoot me an email.
               </h1>
-              <div class="form">
+              <!-- <div class="form">
                 <form action="/form/submit" method="POST">
                   <textarea class="comment">Leave me a message.</textarea>
                   <br>
                   <input type="submit" name="submit" value="Send" style="background-color: wheat; color: black; width: 5vw; height: 3vh; border-radius: 20%; cursor: pointer;">
                 </form>
 
-              </div>
+              </div> -->
               
             </div>
 
-            <div class="about">
+            <div class=".col-sm-12 .col-md-3 .col-lg-3 about">
               <img
                 src="az1866.jpg"
                 id="self"
@@ -195,18 +209,12 @@
 
     <!-- <script type="text/javascript" src="js/paper.js"></script> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
-    <!-- react JS -->
-    <script
-      src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-      crossorigin
-    ></script>
+  
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -224,7 +232,7 @@
     <script src="js/glider.min.js"></script>
     <script>
       new Glider(document.querySelector(".glider"), {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         draggable: true,
         dots: ".dots",
@@ -232,6 +240,28 @@
           prev: ".glider-prev",
           next: ".glider-next",
         },
+        responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        // itemWidth: 100,
+        duration: 0.25
+      }
+    }
+  ]
       });
     </script>
   </body>

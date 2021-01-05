@@ -17,6 +17,7 @@
     box-sizing: border-box;
     border: none;
     font-family: 'Roboto Slab', serif;
+    
 }
 
 main{
@@ -113,6 +114,7 @@ li a{
     text-transform: uppercase;
     letter-spacing: 0.5em;
     padding-top: 10px;
+    z-index: 1000;
   }
   
   .ml12 .letter {
@@ -143,123 +145,90 @@ li a{
     color:rgba(96, 87, 70,0.9);
 }
 
-.landingCont{
+.container-fluid .landingCont{
     width: 100vw !important;
     padding-top: 10vh;
     align-items: left;
+    overflow: hidden;
+    padding-right: 0 !important;
     overflow: hidden;
 }
 .box{
     color: wheat;
 }
 
-.row{
-    width: 100vw;
-    height: 10vh;
+.container-fluid .row{
+    width: 100% !important;
+    height: 10%;
     overflow: hidden;
     align-items: left;
     text-align: left; 
+    padding-right: 0% !important;
 }
 
-.row h1{
-    width: 100vw;
-    height: 10vh;
-}
 
 #txt1{
-    /* padding-top: 10vh; */
-    padding-left: 60vw;
-    font-size: 50px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: 0.10em solid wheat !important; The typwriter cursor */
+    font-size: 3.3em;
+    overflow: wrap; 
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens 
     letter-spacing: .15em; /* Adjust as needed */
-    /* animation: typing 7.5s steps(10, end), blink-caret .7s step-end; */
+  
 }
 #txt2{
-    padding-top: -15vh;
     font-size: 53px;
-    transform: translateX(10vw);
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: 0.10em solid wheat !important; The typwriter cursor */
+    overflow: wrap;
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    /* animation: typing 5.5s steps(20, end), blink-caret .3s step-end; */
+    
 }
 #txt3{
-    transform: translateX(60vw);
-    padding-top: 10vh;
     font-size: 40px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: 0.10em solid wheat !important; The typwriter cursor */
+    overflow: hidden; 
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    /* animation: 
-    typing 1.5s steps(20, end),
-    blink-caret 1.75s step-end infinite; */
 }
 #txt4{
     /* padding-top: 10px; */
     font-size: 40px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: 0.10em solid wheat !important; The typwriter cursor */
+    overflow: hidden; 
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    /* animation: 
-    typing 7.5s steps(20, end),
-    blink-caret .75s step-end infinite; */
+
 }
 #txt5{
-    transform: translateX(90vw);
-    padding-top: -5vh;
+ 
     font-size: 60px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: 0.10em solid wheat !important; The typwriter cursor */
+    overflow: hidden; 
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin: 0 auto; 
     letter-spacing: .15em; /* Adjust as needed */
-    /* animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .75s step-end infinite; */
+ 
 }
 #txt6{
-    transform: translateX(70vw);
-    padding-top: 2vh;
+   
     font-size: 45px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: 0.10em solid wheat !important; The typwriter cursor */
+    overflow: hidden; 
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin: 0 auto; 
     letter-spacing: .15em; /* Adjust as needed */
-    /* animation: 
-    typing 3.5s steps(30, end), */
-    /* blink-caret .75s step-end infinite; */
+   
 }
 #txt7{
-    transform: translateX(10vw);
-    padding-top: 1vh;
+    /* transform: translateX(10vw); */
+    /* padding-top: 1vh; */
     font-size: 40px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     /* border-right: 0.10em solid wheat !important; The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
-    /* animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .75s step-end infinite; */
+
 }
-/* @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-} */
+
 #scroll{
     text-align: right;
     color: wheat;
@@ -276,8 +245,7 @@ li a{
 }
 /* Footer */
 .bottom{
-    height: 100vh;
-    width: 100%;
+
     text-align: center;
     background-color: #171717;
     border-style: solid;
@@ -285,19 +253,32 @@ li a{
     display: flex;
 }
 .connect{
-    width: 100vw;
+    width: 100%;
     margin-top: 0;
     align-content: center;
 }
+@media screen and (max-width: 1010px) {
+    .bottom{
+      display: block;
+    }
+    
+    
+  }
+@media screen and (max-width: 1010px) {
+    .line2{
+        border: 2px solid wheat;
+        width: 100vw;
+    }
+    
+}
 .about{
-    height: 100vh;
-    align-items: center;
-    width: 44vw;
+    align-items: right;
+
 }
 #self{
     padding-top: 25vh;
     padding-bottom: 8vh;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 .form{
     width: 56vw;
@@ -316,7 +297,7 @@ li a{
 #aboutMe{
     width: 56vw;
     color: wheat;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     padding-top: 5vh;
     justify-content: justify;
     text-align: right;
@@ -352,10 +333,10 @@ li a{
 .copyright{
     position: relative;
     bottom: 0;
-    height: 3vh;
     text-align: center;
     padding-top: 5vh;
     color: wheat;
+    padding-bottom: 25%;
 
 }
 
@@ -379,8 +360,6 @@ li a{
 .ml11 .text-wrapper {
     position: relative;
     display: inline-block;
-    /* padding-top: 0.1em; */
-    padding-right: 0.5em;
     padding-bottom: 0.15em;
 }
 
@@ -392,6 +371,7 @@ li a{
     width: 5px;
     background-color: #fff;
     transform-origin: 0 50%;
+
 }
   
 .ml11 .line1 { 
@@ -421,3 +401,4 @@ li a{
     padding-right: 10vw;
     padding-bottom:1vh;
 }
+
